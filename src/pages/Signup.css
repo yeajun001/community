@@ -1,0 +1,77 @@
+/* Wrapper to center the form vertically and horizontally */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f9f9f9; /* Light background for better contrast */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Signup form styling */
+  .signup-form {
+    background-color: #ffffff; /* White background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Restrict the form's width */
+    text-align: center;
+  }
+  
+  /* Headings and Labels */
+  .signup-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .signup-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Inputs and Button */
+  .signup-form input,
+  .signup-form .register-button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Same padding for consistency */
+    margin-bottom: 15px; /* Add spacing between fields */
+    border: 1px solid #ccc; /* Same border for consistency */
+    border-radius: 5px; /* Same border radius */
+    font-size: 14px;
+    box-sizing: border-box; /* Ensures consistent box model */
+  }
+  
+  /* Styling specifically for the button */
+  .signup-form .register-button {
+    background-color: #302B76; /* Custom button color */
+    color: white; /* Text color for button */
+    border: none; /* Remove border for the button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-form .register-button:hover {
+    background-color: #3f3aa0; /* Slightly brighter on hover */
+  }
+  
+  /* Login link */
+  .login-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .login-link a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  

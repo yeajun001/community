@@ -1,0 +1,28 @@
+.logo-search-container {
+    background-color: #fff;
+    display: flex;
+    align-items: left;
+    padding: 30px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    padding: 0 20px;
+}
+.header {
+    background-color: #302B76;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.header div {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1200px;
+}
+.header p {
+    font-size: 20px;
+    margin: 0 30px;
+}

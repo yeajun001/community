@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.mypage-container {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+}
+
+.mypage-sidebar {
+  margin-left: 0px;
+  width: 200px;
+  background-color: #fff;
+  padding:40px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.mypage-sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #4c46aa;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mypage-sidebar button.active {
+  background-color: black;
+}
+
+.mypage-sidebar button:hover {
+  background-color: #5a53b3;
+}
+
+.mypage-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.mypage-content h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #302B76;
+}
+
+.mypage-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mypage-content form input,
+.mypage-content form textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.mypage-content form button {
+  background-color: #302B76;
+  color: #fff;
+  border: none;
+  padding: 10px; /* 버튼 내부 여백 */
+  font-size: 14px; /* 글자 크기 */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 300px; /* 버튼 가로 길이 설정 */
+  text-align: center; /* 텍스트를 중앙 정렬 */
+}
+
+.mypage-content form button:hover {
+  background-color: #5046b3;
+}
+
+
+.mypage-content form button:hover {
+  background-color: #5046b3;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .mypage-container {
+    flex-direction: column;
+  }
+
+  .mypage-sidebar {
+    width: 100%;
+    box-shadow: none;
+    padding: 10px;
+  }
+
+  .mypage-sidebar button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .mypage-content {
+    padding: 20px;
+  }
+
+  .mypage-content form input,
+  .mypage-content form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .mypage-content form button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
